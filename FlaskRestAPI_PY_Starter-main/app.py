@@ -53,7 +53,7 @@ movies_schema=MovieSchema(many=True)
 class MovieListResource(Resource):
     def get(self):
         all_movies=Movie.query.all()
-        return movies_schema.dump(all_movies)
+        return movies_schema.dump(all_movies), 200
 
     def post(self):
         try:
@@ -68,7 +68,7 @@ class MovieListResource(Resource):
 class MovieResource(Resource):
     def get(self,pk):
         movie_from_db=Movie.query.get_or_404(pk)
-        return movie_schema.dump(movie_from_db)
+        return movie_schema.dump(movie_from_db), 200
     
     def delete(self, pk):
         movie_from_db=Movie.query.get_or_404(pk)
@@ -88,7 +88,7 @@ class MovieResource(Resource):
             movie_from_db.inventory_quantity =request.json['inventory_quantity']
 
         db.session.commit()
-        return movie_schema.dump(movie_from_db)
+        return movie_schema.dump(movie_from_db), 200
 
 # Routes
 api.add_resource(MovieListResource, '/api/products/')
