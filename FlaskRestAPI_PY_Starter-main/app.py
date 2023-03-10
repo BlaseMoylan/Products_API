@@ -75,6 +75,7 @@ class MovieResource(Resource):
     def delete(self, pk):
         movie_from_db=Movie.query.get_or_404(pk)
         db.session.delete(movie_from_db)
+        db.session.commit()
         return '', 204
     
     def put(self, pk):
