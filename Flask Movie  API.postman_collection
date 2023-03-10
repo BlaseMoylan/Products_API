@@ -36,7 +36,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/api/products/49",
+					"raw": "http://127.0.0.1:5000/api/products/57",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -48,7 +48,7 @@
 					"path": [
 						"api",
 						"products",
-						"49"
+						"57"
 					]
 				}
 			},
@@ -60,7 +60,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/api/products/43",
+					"raw": "http://127.0.0.1:5000/api/products/64",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -72,7 +72,7 @@
 					"path": [
 						"api",
 						"products",
-						"43"
+						"64"
 					]
 				}
 			},
@@ -118,7 +118,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"price\": 5.50,\r\n    \"name\": \"Wild Life\",\r\n    \"description\":\"Adventure,Comedy\" ,\r\n    \"inventory_quantity\": 4\r\n}",
+					"raw": "{\r\n\"inventory_quantity\": 11,\r\n        \"description\": \"Comedy\",\r\n        \"price\": 2.5,\r\n        \"name\": \"Big Shot\",\r\n        \"image\": \"https://www.bing.com/images/search?view=detailV2&ccid=UcHNuJhH&id=EFFECD77F9E88C7938AF19DE7D51ED9654B7858D&thid=OIP.UcHNuJhHXvYCB9CzxmMwogHaLH&mediaurl\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -126,7 +126,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/api/products/65",
+					"raw": "http://127.0.0.1:5000/api/products/64",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -138,7 +138,7 @@
 					"path": [
 						"api",
 						"products",
-						"65"
+						"64"
 					]
 				}
 			},
